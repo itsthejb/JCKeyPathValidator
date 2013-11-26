@@ -10,6 +10,7 @@
 		49A4C3DD18455C5C008AFC64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4C3DC18455C5C008AFC64 /* Foundation.framework */; };
 		49A4C3E018455C5C008AFC64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3DF18455C5C008AFC64 /* main.m */; };
 		49A4C3E418455C5C008AFC64 /* JCKeyPathValidation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */; };
+		49A4C3EC18455C71008AFC64 /* RGObjectKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3EB18455C71008AFC64 /* RGObjectKeyPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		49A4C3DF18455C5C008AFC64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49A4C3E218455C5C008AFC64 /* JCKeyPathValidation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCKeyPathValidation-Prefix.pch"; sourceTree = "<group>"; };
 		49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JCKeyPathValidation.1; sourceTree = "<group>"; };
+		49A4C3EA18455C71008AFC64 /* RGObjectKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGObjectKeyPath.h; sourceTree = "<group>"; };
+		49A4C3EB18455C71008AFC64 /* RGObjectKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGObjectKeyPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		49A4C3DE18455C5C008AFC64 /* JCKeyPathValidation */ = {
 			isa = PBXGroup;
 			children = (
+				49A4C3EA18455C71008AFC64 /* RGObjectKeyPath.h */,
+				49A4C3EB18455C71008AFC64 /* RGObjectKeyPath.m */,
 				49A4C3DF18455C5C008AFC64 /* main.m */,
 				49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */,
 				49A4C3E118455C5C008AFC64 /* Supporting Files */,
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A4C3EC18455C71008AFC64 /* RGObjectKeyPath.m in Sources */,
 				49A4C3E018455C5C008AFC64 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
