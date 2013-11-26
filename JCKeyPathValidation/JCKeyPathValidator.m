@@ -20,7 +20,7 @@
   NSString *key = NSStringFromClass(klass);
   id ret = [cache objectForKey:key];
   if (!ret) {
-    ret = [[k alloc] init];
+    ret = [[klass alloc] init];
     [cache setObject:ret forKey:key];
   }
   return ret;
