@@ -7,44 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49A4C3DD18455C5C008AFC64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4C3DC18455C5C008AFC64 /* Foundation.framework */; };
-		49A4C3E018455C5C008AFC64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3DF18455C5C008AFC64 /* main.m */; };
-		49A4C3E418455C5C008AFC64 /* JCKeyPathValidation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */; };
-		49A4C3EC18455C71008AFC64 /* JCKeyPathValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */; };
 		49A4C40B18455D60008AFC64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4C40A18455D60008AFC64 /* XCTest.framework */; };
 		49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A4C40F18455D60008AFC64 /* InfoPlist.strings */; };
 		49A4C41318455D60008AFC64 /* JCKeyPathValidation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		49A4C41518455D60008AFC64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 49A4C3D118455C5C008AFC64 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 49A4C3D818455C5C008AFC64;
-			remoteInfo = JCKeyPathValidation;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		49A4C3D718455C5C008AFC64 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				49A4C3E418455C5C008AFC64 /* JCKeyPathValidation.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		49A4C3D918455C5C008AFC64 /* JCKeyPathValidator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JCKeyPathValidator; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A4C3DC18455C5C008AFC64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		49A4C3DF18455C5C008AFC64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		49A4C3E218455C5C008AFC64 /* JCKeyPathValidator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCKeyPathValidator-Prefix.pch"; sourceTree = "<group>"; };
-		49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JCKeyPathValidation.1; sourceTree = "<group>"; };
 		49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCKeyPathValidator.h; sourceTree = "<group>"; };
 		49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidator.m; sourceTree = "<group>"; };
 		49A4C40918455D60008AFC64 /* JCKeyPathValidator Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCKeyPathValidator Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,14 +25,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		49A4C3D618455C5C008AFC64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49A4C3DD18455C5C008AFC64 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49A4C40618455D60008AFC64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,7 +49,6 @@
 		49A4C3DA18455C5C008AFC64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49A4C3D918455C5C008AFC64 /* JCKeyPathValidator */,
 				49A4C40918455D60008AFC64 /* JCKeyPathValidator Tests.xctest */,
 			);
 			name = Products;
@@ -108,20 +68,9 @@
 			children = (
 				49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */,
 				49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */,
-				49A4C3DF18455C5C008AFC64 /* main.m */,
-				49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */,
-				49A4C3E118455C5C008AFC64 /* Supporting Files */,
 			);
 			name = JCKeyPathValidator;
 			path = JCKeyPathValidation;
-			sourceTree = "<group>";
-		};
-		49A4C3E118455C5C008AFC64 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				49A4C3E218455C5C008AFC64 /* JCKeyPathValidator-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		49A4C40C18455D60008AFC64 /* Tests */ = {
@@ -147,23 +96,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49A4C3D818455C5C008AFC64 /* JCKeyPathValidator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49A4C3E718455C5C008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidator" */;
-			buildPhases = (
-				49A4C3D518455C5C008AFC64 /* Sources */,
-				49A4C3D618455C5C008AFC64 /* Frameworks */,
-				49A4C3D718455C5C008AFC64 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JCKeyPathValidator;
-			productName = JCKeyPathValidation;
-			productReference = 49A4C3D918455C5C008AFC64 /* JCKeyPathValidator */;
-			productType = "com.apple.product-type.tool";
-		};
 		49A4C40818455D60008AFC64 /* JCKeyPathValidator Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidator Tests" */;
@@ -175,7 +107,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				49A4C41618455D60008AFC64 /* PBXTargetDependency */,
 			);
 			name = "JCKeyPathValidator Tests";
 			productName = "JCKeyPathValidation Tests";
@@ -208,7 +139,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49A4C3D818455C5C008AFC64 /* JCKeyPathValidator */,
 				49A4C40818455D60008AFC64 /* JCKeyPathValidator Tests */,
 			);
 		};
@@ -226,15 +156,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		49A4C3D518455C5C008AFC64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49A4C3EC18455C71008AFC64 /* JCKeyPathValidator.m in Sources */,
-				49A4C3E018455C5C008AFC64 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49A4C40518455D60008AFC64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,14 +165,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		49A4C41618455D60008AFC64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 49A4C3D818455C5C008AFC64 /* JCKeyPathValidator */;
-			targetProxy = 49A4C41518455D60008AFC64 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49A4C40F18455D60008AFC64 /* InfoPlist.strings */ = {
@@ -333,24 +246,6 @@
 			};
 			name = Release;
 		};
-		49A4C3E818455C5C008AFC64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCKeyPathValidation/JCKeyPathValidator-Prefix.pch";
-				PRODUCT_NAME = JCKeyPathValidator;
-			};
-			name = Debug;
-		};
-		49A4C3E918455C5C008AFC64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCKeyPathValidation/JCKeyPathValidator-Prefix.pch";
-				PRODUCT_NAME = JCKeyPathValidator;
-			};
-			name = Release;
-		};
 		49A4C41718455D60008AFC64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,15 +288,6 @@
 			buildConfigurations = (
 				49A4C3E518455C5C008AFC64 /* Debug */,
 				49A4C3E618455C5C008AFC64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49A4C3E718455C5C008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49A4C3E818455C5C008AFC64 /* Debug */,
-				49A4C3E918455C5C008AFC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
