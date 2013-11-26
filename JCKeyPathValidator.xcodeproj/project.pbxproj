@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494068D1184563D30016BEFF /* JCKeyPathValidator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */; };
 		49A4C40B18455D60008AFC64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4C40A18455D60008AFC64 /* XCTest.framework */; };
 		49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A4C40F18455D60008AFC64 /* InfoPlist.strings */; };
 		49A4C41318455D60008AFC64 /* JCKeyPathValidation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JCKeyPathValidator.podspec; path = ../JCKeyPathValidator.podspec; sourceTree = "<group>"; };
 		49A4C3DC18455C5C008AFC64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCKeyPathValidator.h; sourceTree = "<group>"; };
 		49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidator.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */,
 				49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */,
+				494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */,
 			);
 			name = JCKeyPathValidator;
 			path = JCKeyPathValidation;
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */,
+				494068D1184563D30016BEFF /* JCKeyPathValidator.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

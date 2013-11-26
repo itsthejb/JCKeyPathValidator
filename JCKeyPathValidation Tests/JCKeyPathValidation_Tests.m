@@ -22,13 +22,13 @@
 @implementation JCKeyPathValidation_Tests
 
 - (void)testValidObjectKeyPath {
-  XCTAssertEqual(RGObjectKeyPath(self.testObject, testProperty),
+  XCTAssertEqual(JCValidateKeyPath(self.testObject, testProperty),
                  @"testProperty",
                  @"Should return string value of property \"testProperty\"");
 }
 
 - (void)testValidClassKeyPath {
-  XCTAssertEqual(RGObjectClassKeyPath([TestClass class], testProperty),
+  XCTAssertEqual(JCValidateKeyPathWithClass([TestClass class], testProperty),
                  @"testProperty",
                  @"Should return string value of property \"testProperty\"");
 }

@@ -1,6 +1,5 @@
 //
-//  RGObjectKeyPath.h
-//  Ragoo
+//  JCValidateKeyPath.h
 //
 //  Created by Jon Crooke on 27/02/2013.
 //  Copyright (c) 2013 jc. All rights reserved.
@@ -8,15 +7,16 @@
 
 #import <Foundation/Foundation.h>
 
+// An extension of:
 // https://gist.github.com/jspahrsummers/1670404
 
-#define RGObjectKeyPath(anObject, aKeyPath) \
+#define JCValidateKeyPath(anObject, aKeyPath) \
 ((void)(NO && ((void)anObject.aKeyPath, NO)), @ # aKeyPath )
 
-#define RGObjectClassKeyPath(aClass, aKeyPath) \
+#define JCValidateKeyPathWithClass(aClass, aKeyPath) \
 ((void)(NO && ((void)[[JCKeyPathValidator cachedInstanceForClass:[aClass class]] aKeyPath], NO)), @ # aKeyPath )
 
 @interface JCKeyPathValidator : NSObject
-+ (id)cachedInstanceForClass:(Class) k;
++ (id)cachedInstanceForClass:(Class) klass;
 @end
 
