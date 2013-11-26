@@ -15,6 +15,8 @@
 
 /* Begin PBXFileReference section */
 		494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JCKeyPathValidator.podspec; path = ../JCKeyPathValidator.podspec; sourceTree = "<group>"; };
+		4964E5E91845674400D0042D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4964E5EA1845674400D0042D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		49A4C3DC18455C5C008AFC64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCKeyPathValidator.h; sourceTree = "<group>"; };
 		49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidator.m; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 				49A4C40C18455D60008AFC64 /* Tests */,
 				49A4C3DB18455C5C008AFC64 /* Frameworks */,
 				49A4C3DA18455C5C008AFC64 /* Products */,
+				4964E5E91845674400D0042D /* LICENSE */,
+				4964E5EA1845674400D0042D /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
