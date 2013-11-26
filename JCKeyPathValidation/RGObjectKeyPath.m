@@ -8,28 +8,20 @@
 
 #import "RGObjectKeyPath.h"
 
-@interface RGObjectKeyPathCache ()
-@property (strong) NSSet *cache;
-@end
-
 @implementation RGObjectKeyPathCache
 
-+ (RGObjectKeyPathCache*)objectCache
-{
-  static RGObjectKeyPathCache *cache = nil;
++ (id)cachedInstanceForClass:(Class)k {
+  static NSCache *cache = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    cache = [[RGObjectKeyPathCache alloc] init];
+    cache = [[NSCache alloc] init];
   });
-  return cache;
-}
-
-- (id)cachedInstanceForClass:(Class)k {
+  
   NSString *key = NSStringFromClass(k);
-  id ret = [self.cache member:key];
+  id ret = [cache objectForKey:key];
   if (!ret) {
     ret = [[k alloc] init];
-    self.cache = [[NSSet setWithObject:ret] setByAddingObjectsFromSet:self.cache];
+    [cache setObject:ret forKey:key];
   }
   return ret;
 }

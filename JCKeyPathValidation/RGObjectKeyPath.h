@@ -14,10 +14,9 @@
 ((void)(NO && ((void)anObject.aKeyPath, NO)), @ # aKeyPath )
 
 #define RGObjectClassKeyPath(aClass, aKeyPath) \
-((void)(NO && ((void)[[[RGObjectKeyPathCache objectCache] cachedInstanceForClass:[aClass class]] aKeyPath], NO)), @ # aKeyPath )
+((void)(NO && ((void)[[RGObjectKeyPathCache cachedInstanceForClass:[aClass class]] aKeyPath], NO)), @ # aKeyPath )
 
 @interface RGObjectKeyPathCache : NSObject
-+ (RGObjectKeyPathCache*)objectCache;
-- (id)cachedInstanceForClass:(Class) k;
++ (id)cachedInstanceForClass:(Class) k;
 @end
 
