@@ -11,7 +11,20 @@
 		49A4C3E018455C5C008AFC64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3DF18455C5C008AFC64 /* main.m */; };
 		49A4C3E418455C5C008AFC64 /* JCKeyPathValidation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */; };
 		49A4C3EC18455C71008AFC64 /* RGObjectKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C3EB18455C71008AFC64 /* RGObjectKeyPath.m */; };
+		49A4C40B18455D60008AFC64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4C40A18455D60008AFC64 /* XCTest.framework */; };
+		49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A4C40F18455D60008AFC64 /* InfoPlist.strings */; };
+		49A4C41318455D60008AFC64 /* JCKeyPathValidation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49A4C41518455D60008AFC64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A4C3D118455C5C008AFC64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A4C3D818455C5C008AFC64;
+			remoteInfo = JCKeyPathValidation;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		49A4C3D718455C5C008AFC64 /* CopyFiles */ = {
@@ -34,6 +47,12 @@
 		49A4C3E318455C5C008AFC64 /* JCKeyPathValidation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JCKeyPathValidation.1; sourceTree = "<group>"; };
 		49A4C3EA18455C71008AFC64 /* RGObjectKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGObjectKeyPath.h; sourceTree = "<group>"; };
 		49A4C3EB18455C71008AFC64 /* RGObjectKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGObjectKeyPath.m; sourceTree = "<group>"; };
+		49A4C40918455D60008AFC64 /* JCKeyPathValidation Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCKeyPathValidation Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A4C40A18455D60008AFC64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		49A4C40E18455D60008AFC64 /* JCKeyPathValidation Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCKeyPathValidation Tests-Info.plist"; sourceTree = "<group>"; };
+		49A4C41018455D60008AFC64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidation_Tests.m; sourceTree = "<group>"; };
+		49A4C41418455D60008AFC64 /* JCKeyPathValidation Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCKeyPathValidation Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49A4C40618455D60008AFC64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4C40B18455D60008AFC64 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4C3DE18455C5C008AFC64 /* JCKeyPathValidation */,
+				49A4C40C18455D60008AFC64 /* JCKeyPathValidation Tests */,
 				49A4C3DB18455C5C008AFC64 /* Frameworks */,
 				49A4C3DA18455C5C008AFC64 /* Products */,
 			);
@@ -61,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4C3D918455C5C008AFC64 /* JCKeyPathValidation */,
+				49A4C40918455D60008AFC64 /* JCKeyPathValidation Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				49A4C3DC18455C5C008AFC64 /* Foundation.framework */,
+				49A4C40A18455D60008AFC64 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +123,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49A4C40C18455D60008AFC64 /* JCKeyPathValidation Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */,
+				49A4C40D18455D60008AFC64 /* Supporting Files */,
+			);
+			path = "JCKeyPathValidation Tests";
+			sourceTree = "<group>";
+		};
+		49A4C40D18455D60008AFC64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49A4C40E18455D60008AFC64 /* JCKeyPathValidation Tests-Info.plist */,
+				49A4C40F18455D60008AFC64 /* InfoPlist.strings */,
+				49A4C41418455D60008AFC64 /* JCKeyPathValidation Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +162,24 @@
 			productReference = 49A4C3D918455C5C008AFC64 /* JCKeyPathValidation */;
 			productType = "com.apple.product-type.tool";
 		};
+		49A4C40818455D60008AFC64 /* JCKeyPathValidation Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidation Tests" */;
+			buildPhases = (
+				49A4C40518455D60008AFC64 /* Sources */,
+				49A4C40618455D60008AFC64 /* Frameworks */,
+				49A4C40718455D60008AFC64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A4C41618455D60008AFC64 /* PBXTargetDependency */,
+			);
+			name = "JCKeyPathValidation Tests";
+			productName = "JCKeyPathValidation Tests";
+			productReference = 49A4C40918455D60008AFC64 /* JCKeyPathValidation Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +188,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jon Crooke";
+				TargetAttributes = {
+					49A4C40818455D60008AFC64 = {
+						TestTargetID = 49A4C3D818455C5C008AFC64;
+					};
+				};
 			};
 			buildConfigurationList = 49A4C3D418455C5C008AFC64 /* Build configuration list for PBXProject "JCKeyPathValidation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -135,9 +207,21 @@
 			projectRoot = "";
 			targets = (
 				49A4C3D818455C5C008AFC64 /* JCKeyPathValidation */,
+				49A4C40818455D60008AFC64 /* JCKeyPathValidation Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49A4C40718455D60008AFC64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49A4C3D518455C5C008AFC64 /* Sources */ = {
@@ -149,7 +233,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49A4C40518455D60008AFC64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4C41318455D60008AFC64 /* JCKeyPathValidation_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49A4C41618455D60008AFC64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A4C3D818455C5C008AFC64 /* JCKeyPathValidation */;
+			targetProxy = 49A4C41518455D60008AFC64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49A4C40F18455D60008AFC64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A4C41018455D60008AFC64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		49A4C3E518455C5C008AFC64 /* Debug */ = {
@@ -238,6 +349,40 @@
 			};
 			name = Release;
 		};
+		49A4C41718455D60008AFC64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCKeyPathValidation Tests/JCKeyPathValidation Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JCKeyPathValidation Tests/JCKeyPathValidation Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		49A4C41818455D60008AFC64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCKeyPathValidation Tests/JCKeyPathValidation Tests-Prefix.pch";
+				INFOPLIST_FILE = "JCKeyPathValidation Tests/JCKeyPathValidation Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -255,6 +400,15 @@
 			buildConfigurations = (
 				49A4C3E818455C5C008AFC64 /* Debug */,
 				49A4C3E918455C5C008AFC64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidation Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A4C41718455D60008AFC64 /* Debug */,
+				49A4C41818455D60008AFC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
