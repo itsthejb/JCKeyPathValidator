@@ -7,28 +7,40 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "RGObjectKeyPath.h"
+
+@interface TestClass : NSObject
+@property (copy) NSString *testProperty;
+@end
+@implementation TestClass
+@end
 
 @interface JCKeyPathValidation_Tests : XCTestCase
-
+@property (strong) TestClass *testObject;
 @end
 
 @implementation JCKeyPathValidation_Tests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)testValidObjectKeyPath {
+  XCTAssertEqual(RGObjectKeyPath(self.testObject, testProperty),
+                 @"testProperty",
+                 @"Should return string value of property \"testProperty\"");
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testValidClassKeyPath {
+  XCTAssertEqual(RGObjectClassKeyPath([TestClass class], testProperty),
+                 @"testProperty",
+                 @"Should return string value of property \"testProperty\"");
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+#pragma mark -
+
+- (void)setUp {
+  self.testObject = [[TestClass alloc] init];
+}
+
+- (void)tearDown {
+  self.testObject = nil;
 }
 
 @end
