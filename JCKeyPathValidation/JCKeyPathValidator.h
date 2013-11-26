@@ -14,9 +14,9 @@
 ((void)(NO && ((void)anObject.aKeyPath, NO)), @ # aKeyPath )
 
 #define RGObjectClassKeyPath(aClass, aKeyPath) \
-((void)(NO && ((void)[[RGObjectKeyPathCache cachedInstanceForClass:[aClass class]] aKeyPath], NO)), @ # aKeyPath )
+((void)(NO && ((void)[[JCKeyPathValidator cachedInstanceForClass:[aClass class]] aKeyPath], NO)), @ # aKeyPath )
 
-@interface RGObjectKeyPathCache : NSObject
+@interface JCKeyPathValidator : NSObject
 + (id)cachedInstanceForClass:(Class) k;
 @end
 

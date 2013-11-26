@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "RGObjectKeyPath.h"
+#import "JCKeyPathValidator.h"
 
 @interface TestClass : NSObject
 @property (copy) NSString *testProperty;

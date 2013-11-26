@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 jc. All rights reserved.
 //
 
-#import "RGObjectKeyPath.h"
+#import "JCKeyPathValidator.h"
 
-@implementation RGObjectKeyPathCache
+@implementation JCKeyPathValidator
 
 + (id)cachedInstanceForClass:(Class)k {
   static NSCache *cache = nil;
