@@ -28,7 +28,7 @@
 }
 
 - (void)testValidClassKeyPath {
-  XCTAssertEqual(JCValidateKeyPathWithClass([TestClass class], testProperty),
+  XCTAssertEqual(JCValidateKeyPathWithClass(TestClass, testProperty),
                  @"testProperty",
                  @"Should return string value of property \"testProperty\"");
 }
