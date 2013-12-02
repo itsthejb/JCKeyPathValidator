@@ -33,10 +33,6 @@
                  @"Should return string value of property \"testProperty\"");
 }
 
-- (void) testAgain {
-  XCTAssertEqual(JCValidateKeyPathWithClass(TestClass, testProperty), @"testProperty", @"foo");
-}
-
 #pragma mark -
 
 - (void)setUp {
