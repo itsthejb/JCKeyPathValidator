@@ -86,8 +86,7 @@
 				49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */,
 				49A4C40D18455D60008AFC64 /* Supporting Files */,
 			);
-			name = Tests;
-			path = "JCKeyPathValidation Tests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		49A4C40D18455D60008AFC64 /* Supporting Files */ = {
@@ -103,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49A4C40818455D60008AFC64 /* JCKeyPathValidator Tests */ = {
+		49A4C40818455D60008AFC64 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidator Tests" */;
+			buildConfigurationList = 49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				49A4C40518455D60008AFC64 /* Sources */,
 				49A4C40618455D60008AFC64 /* Frameworks */,
@@ -115,7 +114,7 @@
 			);
 			dependencies = (
 			);
-			name = "JCKeyPathValidator Tests";
+			name = Tests;
 			productName = "JCKeyPathValidation Tests";
 			productReference = 49A4C40918455D60008AFC64 /* JCKeyPathValidator Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -126,7 +125,7 @@
 		49A4C3D118455C5C008AFC64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jon Crooke";
 				TargetAttributes = {
 					49A4C40818455D60008AFC64 = {
@@ -146,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49A4C40818455D60008AFC64 /* JCKeyPathValidator Tests */,
+				49A4C40818455D60008AFC64 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,17 +256,18 @@
 		49A4C41718455D60008AFC64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCKeyPathValidation Tests/JCKeyPathValidator Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/JCKeyPathValidator Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "JCKeyPathValidation Tests/JCKeyPathValidator Tests-Info.plist";
+				INFOPLIST_FILE = "Tests/JCKeyPathValidator Tests-Info.plist";
 				PRODUCT_NAME = "JCKeyPathValidator Tests";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -276,13 +276,14 @@
 		49A4C41818455D60008AFC64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCKeyPathValidation Tests/JCKeyPathValidator Tests-Prefix.pch";
-				INFOPLIST_FILE = "JCKeyPathValidation Tests/JCKeyPathValidator Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/JCKeyPathValidator Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/JCKeyPathValidator Tests-Info.plist";
 				PRODUCT_NAME = "JCKeyPathValidator Tests";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -300,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "JCKeyPathValidator Tests" */ = {
+		49A4C41918455D60008AFC64 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49A4C41718455D60008AFC64 /* Debug */,
