@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/itsthejb/JCKeyPathValidator.svg?branch=master)](https://travis-ci.org/itsthejb/JCKeyPathValidator)
+[![Build Status](https://travis-ci.org/itsthejb/JCKeyPathValidator.svg?branch=develop)](https://travis-ci.org/itsthejb/JCKeyPathValidator)
+
 JCKeyPathValidator
 ==================
 
@@ -35,6 +38,10 @@ Note that as of v1.0.1 you ***cannot*** use `JCValidateKeyPathWithClass([NSStrin
 Ideally the cache wouldn't be necessary, but I haven't been able to find a way to do this entirely with the runtime.
 
 ##Version history
+
+**v1.0.2**
+
+General spring-clean and Travis configuration.
 
 **v1.0.1**
 
