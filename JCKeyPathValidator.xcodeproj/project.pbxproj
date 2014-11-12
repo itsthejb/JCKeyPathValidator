@@ -20,7 +20,6 @@
 		4964E5EA1845674400D0042D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		49A4C3DC18455C5C008AFC64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCKeyPathValidator.h; sourceTree = "<group>"; };
-		49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidator.m; sourceTree = "<group>"; };
 		49A4C40918455D60008AFC64 /* JCKeyPathValidator Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCKeyPathValidator Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A4C40A18455D60008AFC64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		49A4C40E18455D60008AFC64 /* JCKeyPathValidator Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCKeyPathValidator Tests-Info.plist"; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */,
-				49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */,
 				494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */,
 			);
 			name = JCKeyPathValidator;
