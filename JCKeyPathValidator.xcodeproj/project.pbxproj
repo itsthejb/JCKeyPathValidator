@@ -9,24 +9,18 @@
 /* Begin PBXBuildFile section */
 		494068D1184563D30016BEFF /* JCKeyPathValidator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */; };
 		49A4C40B18455D60008AFC64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4C40A18455D60008AFC64 /* XCTest.framework */; };
-		49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A4C40F18455D60008AFC64 /* InfoPlist.strings */; };
 		49A4C41318455D60008AFC64 /* JCKeyPathValidation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JCKeyPathValidator.podspec; path = ../JCKeyPathValidator.podspec; sourceTree = "<group>"; };
-		49622B5919098B5B00A904CB /* JCKeyPathValidator.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCKeyPathValidator.podspec; sourceTree = "<group>"; };
+		494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCKeyPathValidator.podspec; sourceTree = "<group>"; };
 		4964E5E91845674400D0042D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4964E5EA1845674400D0042D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		49A4C3DC18455C5C008AFC64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCKeyPathValidator.h; sourceTree = "<group>"; };
-		49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidator.m; sourceTree = "<group>"; };
 		49A4C40918455D60008AFC64 /* JCKeyPathValidator Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCKeyPathValidator Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A4C40A18455D60008AFC64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		49A4C40E18455D60008AFC64 /* JCKeyPathValidator Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCKeyPathValidator Tests-Info.plist"; sourceTree = "<group>"; };
-		49A4C41018455D60008AFC64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCKeyPathValidation_Tests.m; sourceTree = "<group>"; };
-		49A4C41418455D60008AFC64 /* JCKeyPathValidator Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCKeyPathValidator Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +43,7 @@
 				49A4C3DB18455C5C008AFC64 /* Frameworks */,
 				49A4C3DA18455C5C008AFC64 /* Products */,
 				4964E5E91845674400D0042D /* LICENSE */,
-				49622B5919098B5B00A904CB /* JCKeyPathValidator.podspec */,
+				494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */,
 				4964E5EA1845674400D0042D /* README.md */,
 			);
 			sourceTree = "<group>";
@@ -75,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				49A4C3EA18455C71008AFC64 /* JCKeyPathValidator.h */,
-				49A4C3EB18455C71008AFC64 /* JCKeyPathValidator.m */,
-				494068D0184563D30016BEFF /* JCKeyPathValidator.podspec */,
 			);
 			name = JCKeyPathValidator;
 			path = JCKeyPathValidation;
@@ -86,19 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				49A4C41218455D60008AFC64 /* JCKeyPathValidation_Tests.m */,
-				49A4C40D18455D60008AFC64 /* Supporting Files */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		49A4C40D18455D60008AFC64 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				49A4C40E18455D60008AFC64 /* JCKeyPathValidator Tests-Info.plist */,
-				49A4C40F18455D60008AFC64 /* InfoPlist.strings */,
-				49A4C41418455D60008AFC64 /* JCKeyPathValidator Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A4C41118455D60008AFC64 /* InfoPlist.strings in Resources */,
 				494068D1184563D30016BEFF /* JCKeyPathValidator.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,17 +154,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		49A4C40F18455D60008AFC64 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49A4C41018455D60008AFC64 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		49A4C3E518455C5C008AFC64 /* Debug */ = {
@@ -264,12 +233,10 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/JCKeyPathValidator Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tests/JCKeyPathValidator Tests-Info.plist";
 				PRODUCT_NAME = "JCKeyPathValidator Tests";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -284,8 +251,6 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/JCKeyPathValidator Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/JCKeyPathValidator Tests-Info.plist";
 				PRODUCT_NAME = "JCKeyPathValidator Tests";
 				WRAPPER_EXTENSION = xctest;
 			};
