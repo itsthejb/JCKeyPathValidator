@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JCKeyPathValidator"
-  s.version      = "1.0.2"
+  s.version      = "1.1.0"
   s.summary      = "Compiler keypath validation."
   s.description  = "Stop using constant NSStrings to represent your keypaths: use compiler symbols instead."
   s.homepage     = "https://github.com/itsthejb/JCKeyPathValidator"
