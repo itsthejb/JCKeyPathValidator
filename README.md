@@ -29,15 +29,13 @@ Particularly useful for removing constant `NSStrings` from your API mappings.
     // Without a local instance
     JCValidateKeyPathWithClass(NSString, length)
 
-Note that as of v1.0.1 you ***cannot*** use `JCValidateKeyPathWithClass([NSString class], length)`
-	
-##Technical considerations
-
-`JCValidateKeyPathWithClass` maintains an `NSCache` of instances for the classes queried. This could certainly causes issues with high memory footprint classes, even when using the default initialiser. Furthermore, it is incompatible with classes that do not support permit a plain `[[class alloc] init]`, by throwing exceptions or so forth.
-
-Ideally the cache wouldn't be necessary, but I haven't been able to find a way to do this entirely with the runtime.
+Note that as of v1.0.1 you ***cannot*** use `JCValidateKeyPathWithClass([NSString class], length)`. Instead you must use the class symbol directly.
 
 ##Version history
+
+**v1.1.0**
+
+Cache now removed and functionality entirely implemented with macros. Many thanks to [Stepan Hruda](https://github.com/stepanhruda) for this.
 
 **v1.0.2**
 
