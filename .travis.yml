@@ -3,12 +3,10 @@ language: objective-c
 xcode_project: JCKeyPathValidator.xcodeproj
 xcode_scheme: Tests
 
-before_script:
-  - export LANG=en_US.UTF-8
-
 before_install: 
-    - brew unlink xctool
-    - brew install xctool --HEAD
-    - gem install cocoapods
+  - export LANG=en_US.UTF-8
+  - brew unlink xctool
+  - brew install xctool --HEAD
+  - gem install cocoapods
 
 script: xctool -project JCKeyPathValidator.xcodeproj -scheme Tests test
